@@ -9,37 +9,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-      @font-face {
-        font-family: 'LucideIcons';
-        src: url(https://cdn.jsdelivr.net/npm/lucide-static@latest/font/Lucide.ttf) format('truetype');
-      }
-      .lucide {
-        font-family: 'LucideIcons';
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        line-height: 1;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        display: inline-block; /* Ensure icon aligns correctly */
-        vertical-align: middle; /* Align icon vertically */
-        margin-right: 0.25rem; /* Add some space after the icon */
-      }
-      /* Custom scrollbar for a more futuristic feel (optional) */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #1f2937; /* Dark gray */
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #dc2626; /* Red */
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #b91c1c; /* Darker red on hover */
-      }
+        @import "https://www.nerdfonts.com/assets/css/webfont.css";
+        @font-face {
+            font-family: 'LucideIcons';
+            src: url(https://cdn.jsdelivr.net/npm/lucide-static@latest/font/Lucide.ttf) format('truetype');
+        }
+        .lucide {
+            font-family: 'LucideIcons';
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            display: inline-block; /* Ensure icon aligns correctly */
+            vertical-align: middle; /* Align icon vertically */
+            margin-right: 0.25rem; /* Add some space after the icon */
+        }
+        /* Custom scrollbar for a more futuristic feel (optional) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1f2937; /* Dark gray */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #dc2626; /* Red */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b91c1c; /* Darker red on hover */
+        }
+
+        .small_icon {
+            font-size: 1px;
+        }
     </style>
     <script>
         // Basic Tailwind configuration
@@ -98,23 +103,23 @@
             </h2>
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/3 text-center">
-                    <img src="https://placehold.co/300x300/1f2937/f3f4f6?text=Aidan+S." alt="Aidan Schneider" class="rounded-full mx-auto shadow-lg border-4 border-primary-red" onerror="this.src='https://placehold.co/300x300/1f2937/f3f4f6?text=Image+Not+Found'; this.onerror=null;">
+                    <img src="images/proPic-removebg.png" alt="Aidan Schneider" class="rounded-full mx-auto shadow-lg border-4 border-primary-red" onerror="this.src='https://placehold.co/300x300/1f2937/f3f4f6?text=Image+Not+Found'; this.onerror=null;">
                 </div>
                 <div class="md:w-2/3">
                     <p class="text-lg text-medium-text mb-4 leading-relaxed">
-                        Hello! I'm Aidan Schneider, a passionate and driven computer scientist based in Milwaukee. I recently graduated from the Milwaukee School of Engineering (MSOE) with a Bachelor of Science in Computer Science in December 2024.
+                        Hello! I'm Aidan Schneider, a passionate and driven computer scientist currently based in Milwaukee. I recently graduated from the Milwaukee School of Engineering (MSOE) with a Bachelor of Science in Computer Science in December 2024.
                     </p>
                     <p class="text-lg text-medium-text mb-4 leading-relaxed">
-                        My fascination with the potential of artificial intelligence has led me to pursue a Master of Science in Machine Learning. I am constantly seeking to expand my knowledge and skills in areas like deep learning, data analysis, and algorithm development.
+                        My fascination with the potential of artificial intelligence has led me to pursue a Master of Science in Machine Learning. I am constantly seeking to expand my knowledge and skills in areas like deep learning, data science, and algorithm development.
                     </p>
                     <p class="text-lg text-medium-text leading-relaxed">
-                        I thrive on solving complex problems and building efficient, innovative solutions. Explore my portfolio to see some of the projects I've worked on.
+                        I thrive on solving complex problems and building efficient, innovative solutions. So please, Explore my portfolio to see some of the projects I've worked on.
                     </p>
                     <div class="mt-8 pt-6 border-t border-gray-700">
                          <h3 class="text-2xl font-semibold mb-4 text-light-text">Education</h3>
                          <div class="mb-4">
                             <p class="font-semibold text-lg text-primary-red">M.S. in Machine Learning</p>
-                            <p class="text-medium-text">Institution Name - Expected Graduation Date</p>
+                            <p class="text-medium-text">Milwaukee School of Engineering (MSOE) - December 2025</p>
                             <p class="text-sm text-gray-500">(Currently Pursuing)</p>
                          </div>
                          <div>
@@ -136,26 +141,34 @@
             </h2>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
                 <div class="bg-medium-bg p-6 rounded-lg shadow-md hover:shadow-glow-red transition duration-300">
-                    <span class="lucide text-4xl text-primary-red mb-2">&#xea4e;</span> <h3 class="text-xl font-semibold mb-2">Programming</h3>
-                    <p class="text-medium-text">Python, Java, C++, JavaScript</p>
+                    <span class="lucide text-4xl text-primary-red mb-2"><i class="nf nf-fa-code"></i></span> <h3 class="text-xl font-semibold mb-2">Programming</h3>
+                    <p class="text-medium-text">Python, Java, C++, Rust</p>
                 </div>
                 <div class="bg-medium-bg p-6 rounded-lg shadow-md hover:shadow-glow-red transition duration-300">
-                    <span class="lucide text-4xl text-primary-red mb-2">&#xea00;</span> <h3 class="text-xl font-semibold mb-2">Machine Learning</h3>
-                    <p class="text-medium-text">TensorFlow, PyTorch, Scikit-learn</p>
+                    <span class="lucide text-4xl text-primary-red mb-2"><i class="nf nf-md-brain"></i></span> <h3 class="text-xl font-semibold mb-2">Machine Learning</h3>
+                    <p class="text-medium-text">TensorFlow, PyTorch, Scikit-learn, Pandas</p>
                 </div>
                 <div class="bg-medium-bg p-6 rounded-lg shadow-md hover:shadow-glow-red transition duration-300">
-                    <span class="lucide text-4xl text-primary-red mb-2">&#xe9c1;</span> <h3 class="text-xl font-semibold mb-2">Databases</h3>
-                    <p class="text-medium-text">SQL, NoSQL (e.g., MongoDB)</p>
+                    <span class="lucide text-4xl text-primary-red mb-2"><i class="nf nf-oct-database"></i></span> <h3 class="text-xl font-semibold mb-2">Databases</h3>
+                    <p class="text-medium-text">SQL, PostgreSQL, NoSQL (e.g., MongoDB)</p>
                 </div>
                 <div class="bg-medium-bg p-6 rounded-lg shadow-md hover:shadow-glow-red transition duration-300">
-                    <span class="lucide text-4xl text-primary-red mb-2">&#xea7a;</span> <h3 class="text-xl font-semibold mb-2">Development Tools</h3>
-                    <p class="text-medium-text">Git, Docker, Linux</p>
+                    <span class="lucide text-4xl text-primary-red mb-2"><i class="nf nf-oct-container"></i></span> <h3 class="text-xl font-semibold mb-2">Development Tools</h3>
+                    <p class="text-medium-text">Git, Docker, Kubernetes, Linux</p>
                 </div>
-                 <div class="bg-medium-bg p-6 rounded-lg shadow-md hover:shadow-glow-red transition duration-300">
-                    <span class="lucide text-4xl text-primary-red mb-2">&#xeae8;</span> <h3 class="text-xl font-semibold mb-2">Web Development</h3>
-                    <p class="text-medium-text">HTML, CSS, React (Basic)</p>
+                <div class="bg-medium-bg p-6 rounded-lg shadow-md hover:shadow-glow-red transition duration-300">
+                    <span class="lucide text-4xl text-primary-red mb-2"><i class="nf nf-fa-html5"></i></span> <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                    <p class="text-medium-text">HTML, CSS, Javascript</p>
                 </div>
+                <div class="bg-medium-bg p-6 rounded-lg shadow-md hover:shadow-glow-red transition duration-300">
+                    <span class="lucide text-4xl text-primary-red mb-2"><i class="nf nf-oct-cloud"></i></span> <h3 class="text-xl font-semibold mb-2">Cloud Services</h3>
+                    <p class="text-medium-text">GCP, AWS, Digital Ocean</p>
                 </div>
+                <div class="bg-medium-bg p-6 rounded-lg shadow-md hover:shadow-glow-red transition duration-300">
+                    <span class="lucide text-4xl text-primary-red mb-2"><i class="nf nf-cod-circuit_board"></i></span><h3 class="text-xl font-semibold mb-2">Embedded</h3>
+                    <p class="text-medium-text">Raspberry Pi (Pico, Model B), Arduino, Micropython</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -168,50 +181,53 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <div class="bg-dark-bg rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                    <img src="https://placehold.co/600x400/111827/dc2626?text=Project+1" alt="Project 1 Placeholder" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/1f2937/f3f4f6?text=Image+Not+Found'; this.onerror=null;">
+                    <img src="images/UG_music.jpeg" alt="Project 1 Placeholder" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/1f2937/f3f4f6?text=Image+Not+Found'; this.onerror=null;">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-light-text">Project Title 1</h3>
+                        <h3 class="text-2xl font-semibold mb-2 text-light-text">Music Recommendator</h3>
                         <p class="text-medium-text mb-4">
-                            A brief description of the project. What problem does it solve? What technologies were used?
+                            This project utilizes a Retrieval-Augmented Generation (RAG) approach to recommend underground music artists.
                         </p>
                         <div class="mb-4">
                             <span class="inline-block bg-medium-bg text-primary-red text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Python</span>
                             <span class="inline-block bg-medium-bg text-primary-red text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Machine Learning</span>
                         </div>
-                        <a href="#" class="text-primary-red hover:text-primary-red-dark font-semibold transition duration-300">
-                            Learn More <span class="lucide">&#xe90e;</span> </a>
-                         </div>
+                        <a href="https://github.com/aidanschneider17/underground-music-picker/tree/main" target="_blank" rel="noopener noreferrer"" class="text-primary-red hover:text-primary-red-dark font-semibold transition duration-300">
+                            Learn More <span class="lucide"><i class="nf nf-md-arrow_top_right small-icon" style="font-size: 12px;"></i></span> </a>
+                    </div>
                 </div>
                 <div class="bg-dark-bg rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                    <img src="https://placehold.co/600x400/111827/dc2626?text=Project+2" alt="Project 2 Placeholder" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/1f2937/f3f4f6?text=Image+Not+Found'; this.onerror=null;">
+                    <img src="images/Damage Calculator.jpeg" alt="Project 2 Placeholder" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/1f2937/f3f4f6?text=Image+Not+Found'; this.onerror=null;">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-light-text">Project Title 2</h3>
+                        <h3 class="text-2xl font-semibold mb-2 text-light-text">Pokemon Damage Calculator</h3>
                         <p class="text-medium-text mb-4">
-                            Another project description goes here. Highlight key features and accomplishments.
+                            This project implements a Pokemon damage calculator using a microservices architecture.
                         </p>
                         <div class="mb-4">
-                            <span class="inline-block bg-medium-bg text-primary-red text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Java</span>
-                            <span class="inline-block bg-medium-bg text-primary-red text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Data Structures</span>
+                            <span class="inline-block bg-medium-bg text-primary-red text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Kubernetes</span>
+                            <span class="inline-block bg-medium-bg text-primary-red text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Docker</span>
+                            <span class="inline-block bg-medium-bg text-primary-red text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Google Cloud</span>
+                            <span class="inline-block bg-medium-bg text-primary-red text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">API</span>
                         </div>
-                        <a href="#" class="text-primary-red hover:text-primary-red-dark font-semibold transition duration-300">
-                            Learn More <span class="lucide">&#xe90e;</span>
+                        <a href="https://github.com/aidanschneider17/pokemon-calculator/tree/main" target="_blank" rel="noopener noreferrer"" class="text-primary-red hover:text-primary-red-dark font-semibold transition duration-300">
+                            Learn More <span class="lucide"><i class="nf nf-md-arrow_top_right small-icon" style="font-size: 12px;"></i></span>
                         </a>
                     </div>
                 </div>
 
                 <div class="bg-dark-bg rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                    <img src="https://placehold.co/600x400/111827/dc2626?text=Project+3" alt="Project 3 Placeholder" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/1f2937/f3f4f6?text=Image+Not+Found'; this.onerror=null;">
+                    <img src="images/pong.jpeg" alt="Project 3 Placeholder" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/1f2937/f3f4f6?text=Image+Not+Found'; this.onerror=null;">
                     <div class="p-6">
-                        <h3 class="text-2xl font-semibold mb-2 text-light-text">Project Title 3</h3>
+                        <h3 class="text-2xl font-semibold mb-2 text-light-text">Kiddie Karnival Pong</h3>
                         <p class="text-medium-text mb-4">
-                           This project involved [briefly describe]. Focused on [key skill or technology].
+                           LED Matrix Pong is a simple, single-player Pong game specifically designed for children.
                         </p>
                         <div class="mb-4">
-                            <span class="inline-block bg-medium-bg text-primary-red text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Web Dev</span>
-                            <span class="inline-block bg-medium-bg text-primary-red text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">API</span>
+                            <span class="inline-block bg-medium-bg text-primary-red text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Pygame</span>
+                            <span class="inline-block bg-medium-bg text-primary-red text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Raspberry Pi</span>
+                            <span class="inline-block bg-medium-bg text-primary-red text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Embedded</span>
                         </div>
-                        <a href="#" class="text-primary-red hover:text-primary-red-dark font-semibold transition duration-300">
-                            Learn More <span class="lucide">&#xe90e;</span>
+                        <a href="https://github.com/aidanschneider17/kiddiekarnival/tree/main" target="_blank" rel="noopener noreferrer" class="text-primary-red hover:text-primary-red-dark font-semibold transition duration-300">
+                            Learn More <span class="lucide"><i class="nf nf-md-arrow_top_right" style="font-size: 12px;"></i></span>
                         </a>
                     </div>
                 </div>
@@ -234,14 +250,14 @@
                     I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Feel free to reach out!
                 </p>
                 <div class="flex justify-center space-x-6 mb-8">
-                     <a href="mailto:your.email@example.com" class="text-medium-text hover:text-primary-red transition duration-300 flex items-center">
-                         <span class="lucide text-2xl mr-2">&#xe9f6;</span> your.email@example.com
+                     <a href="mailto:aidanschnei@gmail.com" class="text-medium-text hover:text-primary-red transition duration-300 flex items-center">
+                         <span class="lucide text-2xl mr-2"><i class="nf nf-oct-mail"></i></span> aidanschnei@gmail.com
                      </a>
-                     <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="text-medium-text hover:text-primary-red transition duration-300 flex items-center">
-                         <span class="lucide text-2xl mr-2">&#xeade;</span> LinkedIn
+                     <a href="https://linkedin.com/in/schneideral" target="_blank" rel="noopener noreferrer" class="text-medium-text hover:text-primary-red transition duration-300 flex items-center">
+                         <span class="lucide text-2xl mr-2"><i class="nf nf-fa-linkedin"></i></span> LinkedIn
                      </a>
-                     <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-medium-text hover:text-primary-red transition duration-300 flex items-center">
-                         <span class="lucide text-2xl mr-2">&#xea7a;</span> GitHub
+                     <a href="https://github.com/aidanschneider17" target="_blank" rel="noopener noreferrer" class="text-medium-text hover:text-primary-red transition duration-300 flex items-center">
+                         <span class="lucide text-2xl mr-2"><i class="nf nf-fa-github"></i></span> GitHub
                      </a>
                  </div>
 
@@ -252,7 +268,7 @@
     <footer class="bg-medium-bg py-6 text-center">
         <div class="container mx-auto px-6">
             <p class="text-medium-text">&copy; 2025 Aidan Schneider. All rights reserved.</p>
-            <a href="#hero" class="mt-2 inline-block text-sm text-primary-red hover:text-primary-red-dark transition duration-300">Back to Top <span class="lucide">&#xe912;</span></a> </div>
+            <a href="#hero" class="mt-2 inline-block text-sm text-primary-red hover:text-primary-red-dark transition duration-300">Back to Top <span class="lucide"><i class="nf nf-fa-arrow_up"></i></span></a> </div>
     </footer>
 
     <script>
